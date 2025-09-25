@@ -27,17 +27,17 @@ public class CoolDownSkill : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //skillButton1.onClick.AddListener(ActivateSkill);
-        //cooldownOverlay.fillAmount = 0f;
-        //cooldownText.text = "";
+        skillButton1.onClick.AddListener(ActivateSkill);
+        cooldownOverlay.fillAmount = 0f;
+        cooldownText.text = "";
 
-        //skillButton2.onClick.AddListener(ActivateSkill2);
-        //cooldownOverlay2.fillAmount = 0f;
-        //cooldownText2.text = "";
+        skillButton2.onClick.AddListener(ActivateSkill2);
+        cooldownOverlay2.fillAmount = 0f;
+        cooldownText2.text = "";
 
-        //skillButton3.onClick.AddListener(ActivateSkill3);
-        //cooldownOverlay3.fillAmount = 0f;
-        //cooldownText3.text = "";
+        skillButton3.onClick.AddListener(ActivateSkill3);
+        cooldownOverlay3.fillAmount = 0f;
+        cooldownText3.text = "";
     }
     void ActivateSkill()
     {
@@ -65,47 +65,47 @@ public class CoolDownSkill : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (!skillButton1.interactable)
-        //{
-        //    cooldownTimer -= Time.deltaTime;
+        if (!skillButton1.interactable)
+        {
+            cooldownTimer -= Time.deltaTime;
 
-        //    cooldownOverlay.fillAmount = cooldownTimer / cooldownTime;
-        //    cooldownText.text = Mathf.Ceil(cooldownTimer).ToString();
+            cooldownOverlay.fillAmount = cooldownTimer / cooldownTime;
+            cooldownText.text = Mathf.Ceil(cooldownTimer).ToString();
 
-        //    if (cooldownTimer <= 0f)
-        //    {
-        //        skillButton1.interactable = true;
-        //        cooldownOverlay.fillAmount = 0f;
-        //        cooldownText.text = "";
-        //    }
-        //}
-        //if (!skillButton2.interactable)
-        //{
-        //    cooldownTimer2 -= Time.deltaTime;
+            if (cooldownTimer <= 0f)
+            {
+                skillButton1.interactable = true;
+                cooldownOverlay.fillAmount = 0f;
+                cooldownText.text = "";
+            }
+        }
+        if (!skillButton2.interactable)
+        {
+            cooldownTimer2 -= Time.deltaTime;
 
-        //    cooldownOverlay2.fillAmount = cooldownTimer2 / cooldownTime2;
-        //    cooldownText2.text = Mathf.Ceil(cooldownTimer2).ToString();
+            cooldownOverlay2.fillAmount = cooldownTimer2 / cooldownTime2;
+            cooldownText2.text = Mathf.Ceil(cooldownTimer2).ToString();
 
-        //    if (cooldownTimer2 <= 0f)
-        //    {
-        //        skillButton2.interactable = true;
-        //        cooldownOverlay2.fillAmount = 0f;
-        //        cooldownText2.text = "";
-        //    }
-        //}
-        //if (!skillButton3.interactable)
-        //{
-        //    cooldownTimer3 -= Time.deltaTime;
+            if (cooldownTimer2 <= 0f)
+            {
+                skillButton2.interactable = true;
+                cooldownOverlay2.fillAmount = 0f;
+                cooldownText2.text = "";
+            }
+        }
+        if (!skillButton3.interactable)
+        {
+            cooldownTimer3 -= Time.deltaTime;
 
-        //    cooldownOverlay3.fillAmount = cooldownTimer3 / cooldownTime2;
-        //    cooldownText3.text = Mathf.Ceil(cooldownTimer3).ToString();
+            cooldownOverlay3.fillAmount = cooldownTimer3 / cooldownTime2;
+            cooldownText3.text = Mathf.Ceil(cooldownTimer3).ToString();
 
-        //    if (cooldownTimer3 <= 0f)
-        //    {
-        //        skillButton3.interactable = true;
-        //        cooldownOverlay3.fillAmount = 0f;
-        //        cooldownText3.text = "";
-        //    }
-        //}
+            if (cooldownTimer3 <= 0f)
+            {
+                skillButton3.interactable = true;
+                cooldownOverlay3.fillAmount = 0f;
+                cooldownText3.text = "";
+            }
+        }
     }
 }
